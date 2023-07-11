@@ -6,7 +6,7 @@ const swaggerUI = require('swagger-ui-express');
 const swaggerOptions = {
   swaggerDefinition: {
     info: {
-      title: "Library API",
+      title: "MY API",
       version: '1.0.0',
     },
   },
@@ -28,9 +28,10 @@ app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
  */
 app.get('/books', (req, res) => {
     res.send([
-        { id: 1, title: "Harry Potter 1", },
-        { id: 2, title: "Harry Potter 2", },
-        { id: 3, title: "Harry Potter 3", }
+        { id: 1, title: "Harry Potter  1", },
+        { id: 2, title: "Harry Potter  2", },
+        { id: 3, title: "Harry Potter  3", },
+        { id: 4, title:  "Harry Potter 4", },
 
     ])
 });
